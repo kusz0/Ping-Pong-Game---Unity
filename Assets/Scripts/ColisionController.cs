@@ -3,6 +3,7 @@ using UnityEngine;
 public class ColisionController : MonoBehaviour
 {
     public BallMovement ballMovement;
+    public ScoreController scoreController;
 
     void BounceFromRacet(Collision2D c2D)
     {
@@ -35,10 +36,12 @@ public class ColisionController : MonoBehaviour
         }else if(collision.gameObject.name == "LeftWall" )
         {
             Debug.Log("Collison with LeftWall");
+            scoreController.GoalPlayer2();
         }
         else if (collision.gameObject.name == "RightWall")
         {
             Debug.Log("Collison with RightWall");
+            scoreController.GoalPlayer1();
         }
     }
 
