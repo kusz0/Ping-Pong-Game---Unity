@@ -1425,6 +1425,7 @@ GameObject:
   - component: {fileID: 1017769090}
   - component: {fileID: 1017769089}
   - component: {fileID: 1017769091}
+  - component: {fileID: 1017769092}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1588,9 +1589,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ffe31d89acc6ca4ebab56b77371744e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallMovement
-  movementSpeed: 300
-  extraSpeedPerHit: 1000
-  maxSpeed: 200000
+  movementSpeed: 400
+  extraSpeedPerHit: 50
+  maxSpeed: 750
+--- !u!114 &1017769092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017769084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76d69ff88d647a45a371b5a979be883, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColisionController
+  ballMovement: {fileID: 1017769091}
 --- !u!1 &1093601940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,7 +1755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faf549253d7055a40aaa87d403f7a6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RackerPlayer1
-  movementSpeed: 200
+  movementSpeed: 400
 --- !u!50 &1093601947
 Rigidbody2D:
   serializedVersion: 5
@@ -1768,7 +1782,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!1 &1184688812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,6 +2005,8 @@ GameObject:
   - component: {fileID: 1623676334}
   - component: {fileID: 1623676333}
   - component: {fileID: 1623676335}
+  - component: {fileID: 1623676336}
+  - component: {fileID: 1623676337}
   m_Layer: 0
   m_Name: RightRacet
   m_TagString: Untagged
@@ -2115,6 +2131,46 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.0000001}
   m_EdgeRadius: 0
+--- !u!50 &1623676336
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623676330}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
+--- !u!114 &1623676337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623676330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2448e6909d0bae4591894a958e41111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RacetPlayer2
+  movementSpeed: 400
 --- !u!1 &1708855143
 GameObject:
   m_ObjectHideFlags: 0
