@@ -2317,6 +2317,7 @@ GameObject:
   - component: {fileID: 1623676335}
   - component: {fileID: 1623676336}
   - component: {fileID: 1623676337}
+  - component: {fileID: 1623676338}
   m_Layer: 0
   m_Name: RightRacet
   m_TagString: Untagged
@@ -2475,12 +2476,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623676330}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2448e6909d0bae4591894a958e41111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RacetPlayer2
   movementSpeed: 400
+--- !u!114 &1623676338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623676330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73de023b7e71b134e9e5e04a454a7a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AiMovement
+  movementSpeed: 400
+  ball: {fileID: 1017769084}
 --- !u!1 &1708855143
 GameObject:
   m_ObjectHideFlags: 0
