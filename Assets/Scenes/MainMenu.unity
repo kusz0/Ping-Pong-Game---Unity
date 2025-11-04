@@ -722,6 +722,7 @@ GameObject:
   - component: {fileID: 951524162}
   - component: {fileID: 951524161}
   - component: {fileID: 951524164}
+  - component: {fileID: 951524165}
   m_Layer: 5
   m_Name: PlayerVsPlayerBtn
   m_TagString: Untagged
@@ -795,11 +796,23 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 951524164}
         m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: Play1v1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 951524159}
+        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -855,6 +868,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05194b8afc6ff264ca1df5c1d5a71b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayButton
+--- !u!114 &951524165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951524159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28c8ea59b848964d886bb53282a38fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuController
 --- !u!1 &1426403336
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +893,7 @@ GameObject:
   - component: {fileID: 1426403339}
   - component: {fileID: 1426403338}
   - component: {fileID: 1426403341}
+  - component: {fileID: 1426403342}
   m_Layer: 5
   m_Name: PlayerVsAiBtn
   m_TagString: Untagged
@@ -941,11 +967,23 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1426403341}
         m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: PlayVsAI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1426403336}
+        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1001,6 +1039,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05194b8afc6ff264ca1df5c1d5a71b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayButton
+--- !u!114 &1426403342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426403336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28c8ea59b848964d886bb53282a38fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuController
 --- !u!1 &1641998063
 GameObject:
   m_ObjectHideFlags: 0
